@@ -1,0 +1,386 @@
+body {
+  background-image: url("15666168_1498216273551816_1481273602_n.png");
+}
+header,
+#Vlereso {
+  margin: 0% 20% 2.5% 20%;
+  background-color: #1f2e33;
+}
+header h1 {
+  margin-left: 1%;
+  font-family: "Copperplate Gothic Light", "Comic Sans MS", sans-serif;
+  color: white;
+  font-size: 300%;
+  padding: 1% 7%;
+}
+header p {
+  text-align: right;
+  color: white;
+  font-size: 120%;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 110%;
+}
+header ul li {
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+header ul .aboutus {
+  float: right;
+}
+header ul li a,
+#logini {
+  display: block;
+}
+header ul li a:link {
+  text-decoration: none;
+  color: silver;
+}
+header ul li a:visited {
+  text-decoration: none;
+  color: silver;
+}
+header ul li a:hover {
+  color: white;
+}
+#login {
+  width: 30%;
+  height: 10%;
+  background-color: #1f2e33;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  color: silver;
+  border-color: 1px solid white;
+  display: none;
+}
+#login input {
+  margin-left: 2%;
+}
+#login button {
+  margin-left: 8%;
+}
+#login pre {
+  font-size: 1.2em;
+}
+#kryesor {
+  width: 89%;
+  margin-left: 5.5%;
+  background-image: url(giselle.jpg);
+  background-repeat: repeat;
+}
+#kryesorimg {
+  margin-left: 16.2%;
+  width: 67.4%;
+}
+#new {
+  margin: 3% 20% 0 20%;
+}
+#new h2 {
+  text-align: center;
+  background-color: #1f2e33;
+  font-size: 1.5em;
+  color: white;
+}
+#dytesor {
+  max-width: 20%;
+  float: left;
+  margin-left: 20%;
+  background-color: #1f2e33;
+  border: solid 1px white;
+}
+#dytesor fig img {
+  width: 90%;
+  margin-left: 5%;
+}
+#dytesor fig figcaption {
+  text-align: center;
+  margin-top: 3%;
+}
+#tre {
+  overflow: hidden;
+  background-color: #1f2e33;
+  margin-right: 20%;
+  margin-top: 0.1%;
+}
+#tre fig img {
+  width: 65.5%;
+  margin-left: 16%;
+}
+#kater {
+  background-color: #1f2e33;
+  overflow: hidden;
+  margin-right: 20%;
+}
+#kater fig img {
+  width: 65%;
+  margin-left: 16.5%;
+}
+#pese {
+  background-color: #1f2e33;
+  overflow: hidden;
+  margin: 1% 20% 2% 20%;
+}
+#pese fig img {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+.stilifont {
+  color: white;
+  font: arial;
+  font-size: 1.1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.linqe:link {
+  color: silver;
+}
+.linqe:visited {
+  color: silver;
+}
+.linqe:hover {
+  color: white;
+}
+
+#para {
+  color: white;
+  padding: 3%;
+  font-size: 140%;
+  text-align: center;
+}
+#harta {
+  margin-left: 25%;
+}
+#butoni {
+  border: none;
+  padding: 2%;
+  color: black;
+  background-color: #fff8dc;
+  margin-left: 45%;
+  margin-bottom: 2%;
+}
+#Vlereso {
+  padding: 1% 0% 1% 0;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+#Vlereso2:link {
+  text-decoration: none;
+}
+/*-----------------------*/
+
+.h1-famous {
+  color: black;
+  font-size: 25px;
+  margin-left: 30%;
+  margin-top: 50px;
+}
+/* font-family: Arial;
+margin: 0;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*-----*/
+
+footer {
+  background-color: #1f2e33;
+  color: silver;
+  margin: 2% 20% 0 20%;
+  padding: 1% 0 0% 1%;
+  clear: left;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 100px;
+}
+.list-footer {
+  display: flex;
+  margin-left: 10%;
+}
+.div-list1 {
+  display: block;
+  margin-top: 24px;
+  margin-left: -100px;
+}
+.div-list2 {
+  display: block;
+  margin-top: 24px;
+  margin-left: -80px;
+}
+.div-list3 {
+  display: block;
+  margin-top: 24px;
+  margin-left: -75px;
+}
+.div-list4 {
+  display: block;
+  margin-top: 24px;
+  margin-left: -56px;
+}
+#abus1 {
+  color: silver;
+  margin-left: 10%;
+}
+#abus2 {
+  color: silver;
+  margin-left: 10%;
+}
+#abus3 {
+  color: silver;
+  margin-left: 10%;
+}
+#abus4 {
+  color: silver;
+  margin-left: 10%;
+}
+footer h2 {
+  text-transform: uppercase;
+}
+/* #abus {
+  color: green;
+  font-size: 20px;
+  margin-left: 10%;
+} */
+footer pre {
+  font-style: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 110%;
+}
+footer.imga {
+  float: left;
+  justify-content: flex-end;
+}
+footer a:link {
+  text-decoration: none;
+  color: silver;
+}
+footer a:visited {
+  text-decoration: none;
+  color: silver;
+}
+footer a:hover {
+  color: white;
+  text-shadow: 0px 0px 5px white;
+}
+#won {
+  text-align: center;
+}
+#won dt {
+  text-transform: capitalize;
+}
+#won dd {
+  margin-left: -1%;
+}
+
+/* @media (max-width: 768px);
+ {
+} */
