@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html manifest="file.appcache">
-
 <head>
    <meta charset="UTF-8" />
    <title>Event Mapper</title>
@@ -26,7 +25,6 @@
 </script>
 <script>
    var x = document.getElementById("para");
-
    function gjejlokacionin() {
       if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -62,6 +60,10 @@
 </script>
 
 <body>
+   <?php
+   // include('App/Projekti1/Controllers/Connection.php');
+    ?>
+
    <header>
       <h1>Event Mapper</h1>
       <hr />
@@ -74,16 +76,16 @@
             <li><a href="App/Projekti1/about-us.php">About us</a></li>
             <!-- <li class="aboutus"><a href="#abus">About us</a></li> -->
             <li class="aboutus" id="logini"><a href="#">Log In</a></li>
-            <li class="aboutus"><a href="../Register/Register.html" target="_blank">Register</a></li>
+            <li class="aboutus"><a href="App/Projekti1/register.php">Register</a></li>
          </nav>
       </ul>
    </header>
    <div id="login">
-      <form>
+      <form method="POST" action="App/Projekti1/Controllers/Login.php">
          <pre> Username:           Password:</pre>
-         <input type="text" placeholder="Username">
-         <input type="text" placeholder="Password">
-         <button type="submit" formaction="WorkingOn.html">Log in</button>
+         <input type="text" name="username" placeholder="Username">
+         <input type="text" name="password" placeholder="Password">
+         <button type="submit">Log in</button>
       </form>
    </div>
    <div id="kryesor">
