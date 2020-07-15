@@ -1,29 +1,29 @@
 <html>
 <?php include('header.php') ?>
 <head>
-   <link rel="stylesheet" href="/css/register.css" />
+   <link rel="stylesheet" href="../css/register.css" />
 </head>
+<body>
    <div>
    <form method="POST" action="Controllers/Register.php">
    <?php include('errors.php'); ?>
   <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-
-    <label for="name"><b>Name</b></label>
+    <h1>Regjistrohu</h1>
+    <p>Plotesojeni kete forme per tu regjistruar.</p>
+   
+  
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
 
-    <label for="username"><b>Username</b></label>
+   
     <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
-    <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-    <label for="psw_repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw_repeat" id="psw_repeat" required>
-    <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+
+    <input type="radio" name="role" value="user">User
+    <input type="radio" name="role" value="admin">Admin
 
     <button type="submit" name="reg_user" class="registerbtn">Register</button>
    </div>

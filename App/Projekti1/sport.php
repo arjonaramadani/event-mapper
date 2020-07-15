@@ -10,31 +10,7 @@
       <h1>SPORT</h1>
    </div>
    <br />
-   <div align="center" style="margin-bottom:2%;">
-      <img class="mySlides" src="/App/images/mk1.jpg" />
-      <img class="mySlides" src="/App/images/sports.png">
-      <img class="mySlides" src="/App/images/stdks.jpg">
-      <img class="mySlides" src="/App/images/kbpeja.jpg">
-      <img class="mySlides" src="/App/images/olympic.jpg">
-   </div>
-   <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-         var i;
-         var x = document.getElementsByClassName("mySlides");
-         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-         }
-         myIndex++;
-         if (myIndex > x.length) {
-            myIndex = 1
-         }
-         x[myIndex - 1].style.display = "block";
-         setTimeout(carousel, 3000); // Ndrro fotot qdo 2 seconds
-      }
-   </script>
+   
    <article>
       <img src="/App/images/kupaks.jpg" title="Foto nga finalja e vitit të kaluar nga kupa e Kosovës" class="image">
       <div class="description">
@@ -79,34 +55,7 @@
          <hr class="vija">
       </div>
    </article>
-   <div class="div2">
-      <h2 class="emri3">"DERBI I ANAMORAVES"<br><br>Derbi më i rëndësishëm në Superligën e Kosovës luhet këtë të shtunë
-         me fillim nga ora 15:00.
-         KF.Gjilani edhe pse në renditje tabelare më lartë do ta ketë mjaft të vështirë fitoren kunder rivalit lokal
-         FC.Drita.Biletat për ndeshjen i gjeni
-         në qender të qytetit të Gjilanit.
-      </h2>
-      <img src="/App/images/derbi.jpg" title="Skifterat vs Intelektualet" class="image3">
-      <img src="/App/images/skifterat.jpg" title="Skifterat gjate derbit" class="image3">
-      <img src="/App/images/intelektualet2.jpg" title="Intelektualet gjate derbit" class="image3">
-      <img src="/App/images/skifterat2.jpg" title="Skifterat gjate derbit" class="image3">
-   </div>
-   <div id="majlinda">
-      <img src="majlinda.jpg" id="imgleft">
-      <p id="pjudo" style="color: white"><span
-            style="color:white; font-family:ariel;text-align:center; font-size:170%;"><strong> Majlinda
-               Kelmendi</strong></span><br /><br /><br />Majlinda Kelmendi kampione e botës në Xhudo , do të ndeshet
-         në roundin e ardhshëm të lojërave Olimpike në Rio me xhudisten nga Kina , ish-kampionen botërore.Majlinda
-         potencoi se ndjehet mirë dhe do të
-         vazhdojë me përgaditje intensive pasi që e njeh mirë kundershtaren nga Kina.Kosova Events organizon ndjekjen e
-         kësaj ndeshje në ekran të madh në Sallën "1 Tetori" ku
-         të gjithë të interesuarit për pjesmarrje ,biletat mund ti gjeni në të gjitha pikat e shitjes të telefonisë
-         IPKO.
-      </p>
-      <img src="/App/images/judo.jpg" id="imgright">
-   </div>
-   
-   
+
    <div class="LojratOlimpike">
       <canvas id="myCanvas" width="229%" height="70%" style="border-bottom:1px dotted #1F2E33;"></canvas>
       <script>

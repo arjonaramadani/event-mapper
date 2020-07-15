@@ -66,30 +66,7 @@
       </div>
       <img src="/App/images/albanskenderaj.jpg" title="Alban Skenderaj" class="image">
    </article>
-   <div class="fildiv">
-      <img src="/App/images/filharmonia.jpg" class="filimg">
-      <h1 class="emri">Filharmonia e Kosoves </h1>
-      <p class="multicolumn">Koncerti i Filharmonisë së Kosovës, do të mbahet të dielën me datën 23 nëntor, në sallën e
-         Kuqe të pallatit e Rinisë.
-         Ky koncert do të ketë për premierë tri veprat të kompozitorëve Kosovar, të Rexho Mulliqit, Zeqirja Ballatës dhe
-         të Kreshnik Aliçkaj.
-         Dirigjent i këtij koncerti do të jetë, Enco Koço, i cili jeton dhe vepron në Angli.
-         Drejtor i Filharmonisë, Baki Jashari, në një konferencë për media tha se ky koncert është mjaft i rëndësishëm
-         pasi është edhe
-         premierë dhe bënë kultivimin e veprave të kompozitorëve shqiptarë.
-         “Është koncert i orkestrës simfonike të filarmonisë së Kosovës, dhe do të thoja menjëherë që veçanti e këtij
-         koncerti është
-         programi premierë, me tri vepra të kompozitorëve kosovar dhe e gjithë kjo është organizuar edhe në bashkëpunim
-         me festivalin
-         e Ditët e Muzikës Kosovare, që organizohet nga shoqata e kompozitorëve të Kosovës. Është ky një bashkëpunim
-         tashmë disa
-         vjeçar dhe se natyrisht që ky bashkëpunim është mjaft i rëndësishëm sepse konsiston edhe me një obligim që ka
-         institucioni
-         ynë për kultivimin dhe prezanttimin, interpretimin e veprave të kompozitorëve shqiptarë në përgjithësi”, tha
-         Jashari.
-      </p>
-      <br />
-   </div>
+
    <p class="togglep">&Xi;</p>
    <div class="tog tog2 hide">
       <img src="/App/images/ledriaudio.jpg" class="toggleimg">

@@ -51,9 +51,33 @@
             <li><a href="App/Projekti1/sport.php">Sport</a></li>
             <li><a href="App/Projekti1/ratings.php">Rate us</a></li>
             <li><a href="App/Projekti1/about-us.php">About us</a></li>
+            <!-- <li><a href="App/Projekti1/new-post.php">New Post</a></li> -->
 
+            <?php
+            if(isset($_COOKIE['user']))
+            {
+               echo '<li><a href="App/Projekti1/new-post.php">New Post</a></li>';
+            }
+             ?>
+            <!-- <li><a href="new-post.php">New Post</a></li> -->
+
+            <?php
+            if(!isset($_COOKIE['user']))
+            {
+             ?>
             <li class="aboutus" id="logini"><a href="#">Log In</a></li>
             <li class="aboutus"><a href="App/Projekti1/register.php">Register</a></li>
+            <?php
+            } else {
+               ?>
+               <li class="aboutus">Hello, <?php echo $_COOKIE['user']  ?></li>
+               <li class="aboutus"><a href="App/Projekti1/logout.php">Log out</a></li>
+
+               <?php
+                  }   
+               ?>
+            <!-- <li class="aboutus" id="logini"><a href="#">Log In</a></li> -->
+            <!-- <li class="aboutus"><a href="App/Projekti1/register.php">Register</a></li> -->
 
         <?php
         }else{ ?>
@@ -63,8 +87,30 @@
             <li><a href="ratings.php">Rate us</a></li>
             <li><a href="about-us.php">About us</a></li>
 
+            <?php
+            if(isset($_COOKIE['user']))
+            {
+               echo '<li><a href="new-post.php">New Post</a></li>';
+            }
+             ?>
+            <!-- <li><a href="new-post.php">New Post</a></li> -->
+
+            <?php
+            if(!isset($_COOKIE['user']))
+            {
+             ?>
             <li class="aboutus" id="logini"><a href="#">Log In</a></li>
             <li class="aboutus"><a href="register.php">Register</a></li>
+            <?php
+            } else {
+               ?>
+               <li class="aboutus">Hello, <?php echo $_COOKIE['user']  ?></li>
+               <li class="aboutus"><a href="logout.php">Log out</a></li>
+
+
+               <?php 
+            } 
+               ?>
 
         <?php
          }
@@ -77,7 +123,7 @@
          <pre> Username:           Password:</pre>
          <input type="text" name="username" placeholder="Username">
          <input type="text" name="password" placeholder="Password">
-         <button type="submit">Log in</button>
+         <button type="submit" >Log in</button>
       </form>
    </div>
 

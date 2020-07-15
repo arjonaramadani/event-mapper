@@ -1,5 +1,4 @@
 <?php 
-	echo "tass \n";
 if (isset($_SESSION['errors']))
 {
 	isset($_SESSION['errors']);
