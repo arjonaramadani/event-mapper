@@ -1,62 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" manifest="file.appcache">
 
+<?php include('header.php') ?>
 <head>
-   <meta charset="UTF-8">
-   <title> Music Events </title>
-   <link rel="stylesheet" href="/App/css/reset.css">
-   <link rel="stylesheet" href="/App/css/music.css">
-   <script src="jquery-3.1.1.min.js"></script>
-   <script>
-      $(document).ready(function () {
-         $(".togglep").click(function () {
-            $(".tog2").slideToggle("slow");
-         });
-      });
-   </script>
-   <script>
-      window.onload = function () {
-         var a = document.getElementById("logini");
-         var b = document.getElementById("login");
-         a.onclick = function (e) {
-            e.preventDefault();
-            b.style.display = "block";
-         }
-         b.onmouseover = function () {
-            b.style.display = "block";
-         }
-         b.onmouseout = function () {
-            b.style.display = "none";
-         }
-      }
-   </script>
+   <link rel="stylesheet" href="../css/music.css" />
 </head>
-
-<body>
-   <header>
-      <h1>Event Mapper</h1>
-      <hr />
-      <ul>
-      <nav>
-            <li><a href="/index.php">Home</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="../../App/Projekti1/sport.php">Sport</a></li>
-            <li><a href="../../App/Projekti1/ratings.php">Rate us</a></li>
-            <li><a href="../../App/Projekti1/about-us.php">About us</a></li>
-            <!-- <li class="aboutus"><a href="#abus">About us</a></li> -->
-            <li class="aboutus" id="logini"><a href="#">Log In</a></li>
-            <li class="aboutus"><a href="../Register/Register.html" target="_blank">Register</a></li>
-         </nav>
-      </ul>
-   </header>
-   <div id="login">
-      <form>
-         <pre> Username:           Password:</pre>
-         <input type="text" placeholder="Username">
-         <input type="text" placeholder="Password">
-         <button type="submit" formaction="../Main/WorkingOn.html">Log in</button>
-      </form>
-   </div>
    <div class="div1">
       <h1>MUSIC</h1>
    </div>
@@ -226,40 +174,8 @@
                Ora</a></li>
       </ul>
    </div>
-   <footer>
-      <div class="list-footer">
+   <?php include('footer.php') ?>
 
-         <h2 id="abus1">Get stared </h2>
-         <div class="div-list1">
-            <p>Home</p>
-            <p>Sign up</p>
-            <p>Downloaded</p>
-         </div>
-         <h2 id="abus2">About Us</h2>
-         <div class="div-list2">
-            <p>Company information</p>
-            <p>Contact Us</p>
-            <p>Reviews</p>
-         </div>
-         <h2 id="abus3">Support </h2>
-         <div class="div-list3">
-            <p>FAQ</p>
-            <p>Help desk</p>
-            <p>Forume</p>
-         </div>
-         <h2 id="abus4">Legal </h2>
-         <div class="div-list4">
-            <p>Terms of service</p>
-            <p>Terms of use</p>
-            <p>Privacy Police</p>
-         </div>
-      </div>
-
-      <img src="/App/images/email_16.png" alt="Email Icon" class="imga">
-      <a href="mailto:am38774@ubt-uni.net" target="_blank">Arnela</a>
-      <a href="mailto:ab38565@ubt-uni.net" target="_blank">Arberita</a>
-      <a href="mailto:ar39181@ubt-uni.net" target="_blank">Arjone</a>
-   </footer>
 </body>
 
 </html>

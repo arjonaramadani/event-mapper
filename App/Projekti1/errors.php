@@ -1,8 +1,9 @@
-<?php  
-if (count($errors) > 0) : ?>
-  <div class="error">
-  	<?php foreach ($errors as $error) : ?>
-  	  <p><?php echo $error ?></p>
-  	<?php endforeach ?>
-  </div>
-<?php  endif ?>
+<?php 
+	echo "tass \n";
+if (isset($_SESSION['errors']))
+{
+	isset($_SESSION['errors']);
+	echo "ts \n";
+	print_r($_SESSION['errors']);
+}
+ ?>

@@ -1,93 +1,10 @@
 <!DOCTYPE html>
 <html manifest="file.appcache">
+<?php include('App/Projekti1/header.php') ?>
 <head>
-   <meta charset="UTF-8" />
-   <title>Event Mapper</title>
-   <link rel="stylesheet" href="/App/css/reset.css">
    <link rel="stylesheet" href="/App/css/Projekti-F1.css" />
 </head>
-<script>
-   window.onload = function () {
-      var a = document.getElementById("logini");
-      var b = document.getElementById("login");
-      a.onclick = function (e) {
-         e.preventDefault();
-         b.style.display = "block";
-      }
-      b.onmouseover = function () {
-         b.style.display = "block";
-      }
-      b.onmouseout = function () {
-         b.style.display = "none";
-      }
 
-   }
-</script>
-<script>
-   var x = document.getElementById("para");
-   function gjejlokacionin() {
-      if (navigator.geolocation) {
-         navigator.geolocation.getCurrentPosition(showPosition, showError);
-      } else {
-         x.innerHTML = "Geolocation is not supported by this browser.";
-      }
-   }
-
-   function showPosition(position) {
-      var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-      var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-         + latlon + "&zoom=14&size=400x300&sensor=false";
-      document.getElementById("harta").innerHTML = "<img src='" + img_url + "'>";
-   }
-
-   function showError(error) {
-      switch (error.code) {
-         case error.PERMISSION_DENIED:
-            x.innerHTML = "User denied the request for Geolocation."
-            break;
-         case error.POSITION_UNAVAILABLE:
-            x.innerHTML = "Location information is unavailable."
-            break;
-         case error.TIMEOUT:
-            x.innerHTML = "The request to get user location timed out."
-            break;
-         case error.UNKNOWN_ERROR:
-            x.innerHTML = "An unknown error occurred."
-            break;
-      }
-   }
-</script>
-
-<body>
-   <?php
-   // include('App/Projekti1/Controllers/Connection.php');
-    ?>
-
-   <header>
-      <h1>Event Mapper</h1>
-      <hr />
-      <ul>
-         <nav>
-            <li><a href="/index.php">Home</a></li>
-            <li><a href="App/Projekti1/music.php">Music</a></li>
-            <li><a href="App/Projekti1/sport.php">Sport</a></li>
-            <li><a href="App/Projekti1/ratings.php">Rate us</a></li>
-            <li><a href="App/Projekti1/about-us.php">About us</a></li>
-            <!-- <li class="aboutus"><a href="#abus">About us</a></li> -->
-            <li class="aboutus" id="logini"><a href="#">Log In</a></li>
-            <li class="aboutus"><a href="App/Projekti1/register.php">Register</a></li>
-         </nav>
-      </ul>
-   </header>
-   <div id="login">
-      <form method="POST" action="App/Projekti1/Controllers/Login.php">
-         <pre> Username:           Password:</pre>
-         <input type="text" name="username" placeholder="Username">
-         <input type="text" name="password" placeholder="Password">
-         <button type="submit">Log in</button>
-      </form>
-   </div>
    <div id="kryesor">
       <img src="/App/images/event.png" id="kryesorimg" />
    </div>
