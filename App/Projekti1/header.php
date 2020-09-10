@@ -122,7 +122,7 @@
       <form method="POST" action="<?php echo $_SERVER['PHP_SELF'] == '/index.php' ? "App/Projekti1/Controllers/Login.php" : "Controllers/Login.php" ?>">
          <pre> Username:           Password:</pre>
          <input type="text" name="username" placeholder="Username">
-         <input type="text" name="password" placeholder="Password">
+         <input type="password" name="password" placeholder="Password">
          <button type="submit" >Log in</button>
       </form>
    </div>
