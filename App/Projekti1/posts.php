@@ -22,7 +22,7 @@
                         <li class="pure-menu">
                             <a href="dashboard.php" class="pure-menu-link">Dashboard</a>
                         </li>
-                        <li class="pure-menu-selected">
+                        <li class="pure-menu">
                             <a href="contacts.php" class="pure-menu-link">Contacts</a>
                         </li>
                         <li class="pure-menu">
@@ -31,7 +31,7 @@
                         <li class="pure-menu">
                             <a href="users.php" class="pure-menu-link">Users</a>
                         </li>
-                        <li class="pure-menu">
+                        <li class="pure-menu-selected">
                             <a href="posts.php" class="pure-menu-link">Posts</a>
                         </li>
                         <li class="pure-menu">
@@ -46,7 +46,8 @@
             <div class="header-small">
 
                 <div class="items">
-                    <h1 class="subhead">Contacts</h1>
+                <h1 class="subhead">Posts <a class="pure-button button-small button-secondary" href="add-post.php">Add New</a></h1>
+
                 </div>
 
 
@@ -56,16 +57,15 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Message</th>
+                                    <th>Title</th>
+                                    <th>Content</th>
                                 </tr>
                                 </thead>
 
                                 <tbody>
                                 <?php
                                     include(dirname(__FILE__)."\Controllers\Connection.php");
-                                    $query = "SELECT * FROM contacts order by created_at desc";
+                                    $query = "SELECT * FROM posts";
                                     $result = mysqli_query($conn, $query);
 
                                     if (mysqli_num_rows($result) > 0) {
@@ -74,9 +74,8 @@
                                             ?>
                                             <tr>
                                             <td><?php echo $row['id'] ?> </td>
-                                            <td><?php echo $row['name'] ?> </td>
-                                            <td><?php echo $row['email'] ?> </td>
-                                            <td><?php echo $row['message'] ?> </td>
+                                            <td><?php echo $row['title'] ?> </td>
+                                            <td><?php echo $row['content'] ?> </td>
                                             </tr>
                                             <?php
                                         }

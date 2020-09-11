@@ -13,20 +13,8 @@
 	</head>
 	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.php" class="logo"><strong>Event Mapper</strong></a>
-					<nav id="nav">
-						<a href="index.php">Home</a>
-						<a href="generic.html">About Us</a>
-						<a href="index.php#footer">Contact Us</a>
-						<a href="elements.html">Register</a>
-						<a href="elements.html">Login</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+		<?php include('App/Projekti1/header.php') ?>
+
 
 		<!-- Banner -->
 			<section id="banner">
@@ -96,34 +84,7 @@
 				</div>
 			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-
-					<h3>Get in touch</h3>
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-
-
-				</div>
-			</footer>
+		<?php include('App/Projekti1/contact-us.php') ?>
 
 		<!-- Scripts -->
 			<script src="App/js/jquery.min.js"></script>

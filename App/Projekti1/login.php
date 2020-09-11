@@ -30,14 +30,14 @@
                         <h3>Sign in</h3>
                         <hr>
 
-                            <form method="post" action="#">
+                            <form method="post" action="Controllers/Login.php">
                                 <div class="row uniform">
                                 <div class="12u$">
                                     <input type="text" name="username" id="username" value="" placeholder="Username" />
                                     </div>
 
                                     <div class="12u$">
-                                    <input type="password" name="confirm-password" id="confirm-password" value="" placeholder="Confirm Password" />
+                                    <input type="password" name="password" id="password" value="" placeholder="Password" />
 
                                     </div>
 

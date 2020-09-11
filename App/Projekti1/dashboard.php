@@ -25,10 +25,16 @@
                             <a href="contacts.php" class="pure-menu-link">Contacts</a>
                         </li>
                         <li class="pure-menu">
-                            <a href="ratings-dashboard.php" class="pure-menu-link">Ratings</a>
+                            <a href="about-us-dashboard.php" class="pure-menu-link">About Us</a>
                         </li>
                         <li class="pure-menu">
-                            <a href="about-us-dashboard.php" class="pure-menu-link">About Us</a>
+                            <a href="users.php" class="pure-menu-link">Users</a>
+                        </li>
+                        <li class="pure-menu">
+                            <a href="posts.php" class="pure-menu-link">Posts</a>
+                        </li>
+                        <li class="pure-menu">
+                            <a href="add-post.php" class="pure-menu-link">Add Post</a>
                         </li>
                     </ul>
                 </div>

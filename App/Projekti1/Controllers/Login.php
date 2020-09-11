@@ -12,10 +12,7 @@
             array_push($errors, "Password is required");
         }
     
-        // echo $username . "," . $password;
-    
         if (count($errors) == 0) {
-                // $password = md5($password);
                 $query = "SELECT * FROM users WHERE username='$username' AND password='$password' LIMIT 1";
                 $result = mysqli_query($conn, $query);
                 $user = mysqli_fetch_assoc($result);

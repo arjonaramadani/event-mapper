@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Admin Panel</title>
@@ -24,11 +25,17 @@
                         <li class="pure-menu">
                             <a href="contacts.php" class="pure-menu-link">Contacts</a>
                         </li>
-                        <li class="pure-menu-selected">
-                            <a href="ratings-dashboard.php" class="pure-menu-link">Ratings</a>
-                        </li>
                         <li class="pure-menu">
                             <a href="about-us-dashboard.php" class="pure-menu-link">About Us</a>
+                        </li>
+                        <li class="pure-menu-selected">
+                            <a href="users.php" class="pure-menu-link">Users</a>
+                        </li>
+                        <li class="pure-menu">
+                            <a href="posts.php" class="pure-menu-link">Posts</a>
+                        </li>
+                        <li class="pure-menu">
+                            <a href="add-post.php" class="pure-menu-link">Add Post</a>
                         </li>
                     </ul>
                 </div>
@@ -49,21 +56,32 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Full Name</th>
-                                    <th>Email</th>
-                                    <th>Role</th>
-                                    <th>Status</th>
+                                    <th>Name</th>
+                                    <th>Username</th>
                                 </tr>
                                 </thead>
 
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Full Name 1</td>
-                                    <td>nickname1@domain.local</td>
-                                    <td>User</td>
-                                    <td>Active</td>
-                                </tr>
+                                <?php
+                                    include(dirname(__FILE__)."\Controllers\Connection.php");
+                                    $query = "SELECT * FROM users";
+                                    $result = mysqli_query($conn, $query);
+
+                                    if (mysqli_num_rows($result) > 0) {
+                                        // output data of each row
+                                        while($row = mysqli_fetch_assoc($result)) {
+                                            ?>
+                                            <tr>
+                                            <td><?php echo $row['id'] ?> </td>
+                                            <td><?php echo $row['name'] ?> </td>
+                                            <td><?php echo $row['username'] ?> </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                    } else {
+                                        echo "0 results";
+                                    }
+                                ?>
                                
                                 </tbody>
                             </table>
